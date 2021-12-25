@@ -1,0 +1,44 @@
+@import url(https://fonts.google.com/specimen/Kanit);
+
+body {
+    background: #082567;
+    font-family: 'Kanit', monospace;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.cursor_shape1 {
+    cursor: auto;
+}
+
+p {
+    color: #FFFFFF;
+    padding: 30px;
+    margin: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p:hover {
+    font-size: 30px;
+    transition: font-size 0.1s;
+    transition-timing-function: ease-in-out;
+    text-shadow: 4px 4px #000000;
+}
+
+.fade-in {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
