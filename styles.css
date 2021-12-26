@@ -10,16 +10,10 @@ h1 {
 }
 
 .container {
-    text-align: center;
     display: flex;
     justify-content: center;
-}
-
-.cursor_shape1 {
-    cursor: auto;
-}
-
-p {
+    margin-left: 250px;
+    margin-right: 250px;
     color: #FFFFFF;
     padding: 30px;
     margin: 50px;
@@ -27,15 +21,65 @@ p {
     font-weight: bold;
 }
 
-p:hover {
-    font-size: 30px;
-    transition: font-size 0.1s;
-    transition-timing-function: ease-in-out;
-    text-shadow: 4px 4px #000000;
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cursor_shape1 {
+    cursor: auto;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+
+img {
+    display: block;
+    padding: 8px;
+    background-color: #082567
+}
+
+.logo {
+    width:40px;
+    height:40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+img.logo:hover {
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 1);
+    transition: background-color 5s border-radius 5s box-shadow 5s;
+}
+
+.centered {
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .fade-in {
     animation: fadeIn 5s;
+}
+
+.word {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a.word:hover {
+    font-weight: 800;
+    text-shadow: 2px 2px #000000;
 }
 
 @keyframes fadeIn {
