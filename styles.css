@@ -18,10 +18,15 @@ h1 {
 
 .navbar {
     position: fixed;
-    bottom: 0;
-    width: 50%;
+    bottom: 10px;
+    width: 360px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.centered {
+    margin-right:250px;
+    margin-left:250px;
 }
 
 .cursor_shape1 {
@@ -29,7 +34,7 @@ h1 {
 }
 
 ul {
-    display: inline-block;
+    display: inline;
     list-style: none;
 }
 
@@ -47,14 +52,15 @@ img {
     width:40px;
     height:40px;
     padding: 5px;
-    margin: 5px;
+    margin: 7px;
 }
 
 img.logo:hover {
     background-color: #000000;
     border-radius: 10px;
     box-shadow: 3px 3px 5px 0px rgba(2, 2, 2, 1);
-    transition: background-color 5s border-radius 5s box-shadow 5s;
+    transition-duration: 1s;
+    transition-property: background-color;
 }
 
 .centered {
@@ -66,20 +72,25 @@ img.logo:hover {
     animation: fadeIn 5s;
 }
 
+/* to make sure that hyperlinks do not get underlined */
 a {
     text-decoration:none;
 }
 
+/* this is for the word resume */
 .word {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: bold;
 }
-
+/* this is what happens when you hover over that word*/
 a.word:hover {
-    color: rgba(123,123,123,1);;
+    /* gray: rgba(123,123,123,1);*/
+    color: rgba(100, 100, 100, 1);
     font-weight: 800;
     text-shadow: 2px 2px rgba(1, 1, 1, 1);
+    transition-duration: 0.5s;
+    transition-property: color;
 }
 
 @keyframes fadeIn {
